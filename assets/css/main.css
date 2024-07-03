@@ -1194,6 +1194,7 @@ section,
 }
 
 .general .details h3 {
+  color: #007ACC;
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -1201,7 +1202,14 @@ section,
 
 .general .details p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+
 }
+
+.general .details p strong {
+  color: #007ACC;
+
+}
+
 
 .general .details p:last-child {
   margin-bottom: 0;
