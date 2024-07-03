@@ -900,12 +900,13 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .container img {
-  background-color: #fff;
-}
 .about .content h3 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.about .content h5 {
+  color: #007ACC;
 }
 
 .about .content ul {
@@ -914,35 +915,17 @@ section,
 }
 
 .about .content ul li {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 40px;
+  padding-bottom: 10px;
 }
 
 .about .content ul i {
-  flex-shrink: 0;
-  font-size: 48px;
-  color: var(--accent-color);
-  margin-right: 20px;
-}
-
-.about .content ul h5 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.about .content ul p {
-  font-size: 15px;
+  font-size: 20px;
+  padding-right: 4px;
+  color: #3fbbc0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-.about .pulsating-play-btn {
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
 }
 
 /*--------------------------------------------------------------
@@ -1171,7 +1154,7 @@ section,
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background: color-mix(in srgb, #004477 90%, white 15%);
 }
 
 /*--------------------------------------------------------------
