@@ -1,10 +1,4 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'contact@example.com';
@@ -37,8 +31,8 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['phone'], 'Phone');
   $contact->add_message( $_POST['date'], 'Appointment Date');
-  $contact->add_message( $_POST['department'], 'Department');
-  $contact->add_message( $_POST['doctor'], 'Doctor');
+  $contact->add_message( $_POST['reson'], 'Reson For Your Visit');
+  $contact->add_message( $_POST['bestTime'], 'Best Time For Appointment');
   $contact->add_message( $_POST['message'], 'Message');
 
   echo $contact->send();

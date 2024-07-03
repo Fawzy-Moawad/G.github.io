@@ -1058,6 +1058,48 @@ section,
 /*--------------------------------------------------------------
 # Appointment Section
 --------------------------------------------------------------*/
+.appointment {
+  background-color: #000;
+}
+
+.appointment .section-title h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.appointment .section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, #fff, transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.appointment .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #007ACC;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+
+
 .appointment .php-email-form {
   width: 100%;
 }
@@ -1067,16 +1109,26 @@ section,
 }
 
 .appointment .php-email-form input,
-.appointment .php-email-form textarea,
 .appointment .php-email-form select {
-  color: var(--default-color);
+  color: #fff;
   background-color: transparent;
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, #fff, transparent 80%);
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   padding: 10px !important;
 }
+
+.appointment .php-email-form textarea{
+  color: #000;
+  background-color: transparent;
+  border-color: color-mix(in srgb, #fff, transparent 80%);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+
 
 .appointment .php-email-form input:focus,
 .appointment .php-email-form textarea:focus,
@@ -1092,11 +1144,21 @@ section,
 
 .appointment .php-email-form input,
 .appointment .php-email-form select {
+  color: #000;
+  background-color: #fff;
   height: 44px;
 }
 
 .appointment .php-email-form textarea {
+  background-color: #fff;
   padding: 10px 12px;
+}
+
+
+.appointment .php-email-form #reson,
+.appointment .php-email-form #bestTime {
+  color: #000;
+  background-color: #fff;
 }
 
 .appointment .php-email-form button[type=submit] {
