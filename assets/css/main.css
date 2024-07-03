@@ -949,40 +949,110 @@ section,
 #New Patient Section
 --------------------------------------------------------------*/
 .newPatient {
-  background: #007ACC;
-}
-.newPatient i {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  width: 54px;
-  height: 54px;
-  font-size: 24px;
-  border-radius: 50px;
-  border: 2px solid var(--background-color);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
+  background-color: #007ACC;
 }
 
-.newPatient .newPatient-item {
-  background-color: var(--surface-color);
-  margin-top: -27px;
-  padding: 30px 30px 25px 30px;
-  width: 100%;
+.newPatient .section-title h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
-  text-align: center;
-  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  z-index: 0;
 }
-.newPatient .newPatient-item p {
-  padding: 0;
-  margin: 0;
-  font-family: var(--heading-font);
-  font-size: 16px;
+
+.newPatient .section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, #fff, transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.newPatient .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #004477;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.newPatient .icon-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.newPatient .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #007ACC;
+  overflow: hidden;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.newPatient .icon:hover {
+  color: #fff;
+  background-color: #005A99;
+}
+
+.newPatient .icon i {
+  font-size: 36px;
+  line-height: 0;
+}
+
+.newPatient .icon-box:hover .icon {
+  box-shadow: 0px 0 25px rgba(63, 187, 192, 0.3);
+}
+
+.newPatient .title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.newPatient .title a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.newPatient .title a:hover {
+  color: #004477;
+}
+
+.newPatient .title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #004477;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.newPatient .description {
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -1046,7 +1116,6 @@ section,
 # General Section
 --------------------------------------------------------------*/
 .general {
-  background-color: #007ACC;
   overflow: hidden;
 }
 
@@ -1105,131 +1174,6 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Doctors Section
---------------------------------------------------------------*/
-.doctors .team-member {
-  background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-radius: 5px;
-  transition: 0.5s;
-  padding: 30px;
-  height: 100%;
-}
-
-@media (max-width: 468px) {
-  .doctors .team-member {
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-}
-
-.doctors .team-member .pic {
-  overflow: hidden;
-  width: 150px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.doctors .team-member .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.doctors .team-member:hover {
-  transform: translateY(-10px);
-}
-
-.doctors .team-member .member-info {
-  padding-left: 30px;
-}
-
-@media (max-width: 468px) {
-  .doctors .team-member .member-info {
-    padding: 30px 0 0 0;
-    text-align: center;
-  }
-}
-
-.doctors .team-member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-
-.doctors .team-member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.doctors .team-member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 85%);
-  bottom: 0;
-  left: 0;
-}
-
-@media (max-width: 468px) {
-  .doctors .team-member span::after {
-    left: calc(50% - 25px);
-  }
-}
-
-.doctors .team-member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-}
-
-.doctors .team-member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-}
-
-@media (max-width: 468px) {
-  .doctors .team-member .social {
-    justify-content: center;
-  }
-}
-
-.doctors .team-member .social a {
-  background: color-mix(in srgb, var(--default-color), transparent 94%);
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 36px;
-  height: 36px;
-}
-
-.doctors .team-member .social a i {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.doctors .team-member .social a:hover {
-  background: var(--accent-color);
-}
-
-.doctors .team-member .social a:hover i {
-  color: var(--contrast-color);
-}
-
-.doctors .team-member .social a+a {
-  margin-left: 8px;
-}
 
 /*--------------------------------------------------------------
 # Gallery Section
@@ -1251,76 +1195,169 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
+.contact {
+  background-color: #007ACC;
 }
 
-.contact .info-item i {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+.contact .section-title h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.contact .section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, #fff, transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.contact .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #004477;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.contact .info-box {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+  font-size: 40px;
+  color: #005A99;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.contact .info-box h3 {
   font-size: 20px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
+  color: #007ACC;
   font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
+  margin: 10px 0;
 }
 
 .contact .php-email-form {
-  height: 100%;
+  background-color: #fff;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
   font-size: 14px;
-  padding: 10px 15px;
+  margin-bottom: 0;
+}
+
+.contact .info-box p:hover {
+  color: #007ACC;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 30px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
   box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  font-size: 14px;
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #007ACC;
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #007ACC;
   border: 0;
-  padding: 10px 36px;
+  padding: 10px 30px;
+  color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 4px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: #005A99;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1481,4 +1518,11 @@ section,
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+#footer .credits a:hover {
+  text-align: center;
+  font-size: 13px;
+  color: #005A99;
+  
 }
