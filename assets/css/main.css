@@ -1159,7 +1159,7 @@ section,
 }
 
 .general .nav-link.active {
-  color: #000;
+  color: #5D9CEC;
   border-color: #6e6e6e;
   background-color: var(--background-color);
 }
@@ -1523,13 +1523,13 @@ section,
 
 
 #footer .copyright {
-  color: #000;
+  color: #fff;
   text-align: center;
   padding-top: 30px;
 }
 
 #footer .copyright .copyRight {
-  color: #fff;
+  color: #5D9CEC;
 }
 
 #footer .credits {
