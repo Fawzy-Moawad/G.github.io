@@ -471,7 +471,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: #6e6e6e;
+    color: #5D9CEC;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -538,7 +538,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: #000;
+    color: #5D9CEC;
   }
 
   .navmenu .active i,
@@ -619,7 +619,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: #fff;
+  background-color: #5D9CEC;
   color: #6e6e6e;
 }
 
@@ -738,7 +738,7 @@ section,
   display: block;
   width: 60px;
   height: 3px;
-  background: #6e6e6e;
+  background: #5D9CEC;
   left: 0;
   right: 0;
   bottom: 0;
@@ -940,7 +940,7 @@ section,
   display: block;
   width: 60px;
   height: 3px;
-  background: #004477;
+  background: #5D9CEC;
   left: 0;
   right: 0;
   bottom: 0;
@@ -990,7 +990,7 @@ section,
 }
 
 .newPatient .title a {
-  color: #fff;
+  color: #5D9CEC;
   transition: 0.3s;
 }
 
@@ -1197,8 +1197,8 @@ section,
   }
 
   .general .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
+    color: #fff;
+    background: #5D9CEC;
   }
 }
 
@@ -1370,7 +1370,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #6e6e6e;
+  background: #fff;
   color: #5D9CEC;
 }
 
