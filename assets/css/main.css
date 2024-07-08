@@ -1076,7 +1076,7 @@ section,
   padding: 10px !important;
 }
 
-.appointment .php-email-form textarea{
+.appointment .php-email-form textarea {
   color: #000;
   background-color: transparent;
   border-color: color-mix(in srgb, #fff, transparent 80%);
@@ -1085,7 +1085,6 @@ section,
   font-size: 14px;
   padding: 10px !important;
 }
-
 
 .appointment .php-email-form input:focus,
 .appointment .php-email-form textarea:focus,
@@ -1111,7 +1110,6 @@ section,
   padding: 10px 12px;
 }
 
-
 .appointment .php-email-form #reson,
 .appointment .php-email-form #bestTime {
   color: #000;
@@ -1131,6 +1129,7 @@ section,
   background: #fff;
   color: #6e6e6e;
 }
+
 
 /*--------------------------------------------------------------
 # General Section
@@ -1388,7 +1387,7 @@ section,
 # Footer Section Section
 --------------------------------------------------------------*/
 #footer {
-  background: #6e6e6e ;
+  background: #6e6e6e;
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
@@ -1401,29 +1400,24 @@ section,
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #footer .footer-top img {
-  height: 125px;
-  width: 100%;
+  height: 160px;
+  width: 130px;
+  display: block;
+  margin: 0 auto;
 }
 
 #footer .footer-top .footer-info h4 {
-  font-size: 20px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 10px;
+  font-size: 13px;
+  padding: 2px 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-}
-
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
-  color: #eee;
+  color: #fff;
 }
 
 #footer .footer-top .social-links a {
@@ -1447,7 +1441,7 @@ section,
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #6e6e6e;
+  background: #5D9CEC;
   color: #fff;
 }
 
@@ -1473,8 +1467,6 @@ section,
   right: 0;
 }
 
-
-
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
@@ -1487,11 +1479,11 @@ section,
 
 #footer .footer-top .footer-links ul i {
   padding-right: 8px;
-  color: #ddd;
+  color: #5D9CEC;
 }
 
 #footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #6e6e6e;
+  border-bottom: 1px solid #5D9CEC;
   padding: 10px 0;
 }
 
@@ -1504,7 +1496,7 @@ section,
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #6e6e6e;
+  color: #5D9CEC;
 }
 
 #footer .footer-top .footer-contact {
@@ -1515,12 +1507,10 @@ section,
   line-height: 26px;
 }
 
-
-#footer .footer-top .footer-contact h4 ,
+#footer .footer-top .footer-contact h4,
 #footer .footer-top .footer-contact p strong {
-  color: #6e6e6e;
+  color: #5D9CEC;
 }
-
 
 #footer .copyright {
   color: #fff;
@@ -1548,5 +1538,4 @@ section,
   text-align: center;
   font-size: 13px;
   color: #000;
-  
 }
