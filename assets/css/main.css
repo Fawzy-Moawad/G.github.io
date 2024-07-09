@@ -813,7 +813,7 @@ section,
 
 .hero .content .why-box {
   color: var(--contrast-color);
-  background: #6e6e6e;
+  background: #282B2D;
   padding: 30px;
   border-radius: 4px;
   z-index: 3;
@@ -845,7 +845,7 @@ section,
 
 .hero .content .why-box .more-btn:hover {
   background: var(--surface-color);
-  color: #6e6e6e;
+  color: #282B2D;
 }
 
 .hero .content .icon-box {
