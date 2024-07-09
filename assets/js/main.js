@@ -183,3 +183,22 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+//APOINTMENT SECTION
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dateInput = document.getElementById('date');
+
+  dateInput.addEventListener('change', function() {
+    const date = new Date(dateInput.value);
+    const minutes = date.getMinutes();
+
+    if (minutes !== 0) {
+      date.setMinutes(0);
+      dateInput.value = date.toISOString().slice(0, 16);
+      alert('Please select a time in full hours.');
+    }
+  });
+});
+
