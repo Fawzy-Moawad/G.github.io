@@ -1138,12 +1138,30 @@ section,
   overflow: hidden;
 }
 
+.general  .section-title h1 {
+  font-size: 50px;
+  color: #212529;
+}
+
 .general .container ul li {
   list-style-type: none;
   font-size: 21px;
 }
 
+.general .info-box {
+  background-color: #212529;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 30px;
+  height: 120px;
+  width: 100%;
+}
 
+.general .info-box h3 {
+  font-size: 20px;
+  background-color: #212529;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Gallery Section
