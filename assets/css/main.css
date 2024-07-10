@@ -1130,6 +1130,118 @@ section,
   color: #fff;
 }
 
+/*-------------------------------------------------------------
+Doctors Referral Foorm
+-------------------------------------------------------------*/
+.referral {
+  background-color: #000;
+}
+
+.referral .section-title h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.referral .section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, #fff, transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.referral .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0e204d;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.referral .php-email-form .form-check-label {
+  color: #fff;
+}
+
+.referral .php-email-form .form-group .list-check-box {
+  color: #fff;
+}
+
+.referral .php-email-form .form-check-input {
+  margin-right: 10px;
+}
+
+.referral .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.referral .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.referral .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.referral .php-email-form input,
+.referral .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.referral .php-email-form input:focus,
+.referral .php-email-form textarea:focus {
+  border-color: #6e6e6e;
+}
+
+.referral .php-email-form input {
+  padding: 10px 15px;
+}
+
+.referral .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.referral .php-email-form button[type=submit] {
+  background: #0e204d;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.referral .php-email-form button[type=submit]:hover {
+  background: #fff;
+  color: #0e204d;
+}
 
 /*--------------------------------------------------------------
 # General Section
