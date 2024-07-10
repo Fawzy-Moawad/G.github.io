@@ -59,7 +59,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -67,6 +67,17 @@ a {
 a:hover {
   color: #A9A8AB;
   text-decoration: none;
+}
+
+/* Custom styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  a {
+    color: #fff; /* Change to your desired color for mobile */
+  }
+
+  a:hover {
+    color: #A9A8AB; /* Change to your desired hover color for mobile */
+  }
 }
 
 h1,
