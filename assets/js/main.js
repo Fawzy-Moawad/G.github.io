@@ -180,17 +180,17 @@
 
 //APOINTMENT SECTION
 
-  function submitForm() {
-    const form = document.getElementById('appointmentForm');
-    const name = form.name.value;
-    const email = form.email.value;
-    const phone = form.phone.value;
-    const date = form.date.value;
-    const reason = form.reson.value;
-    const bestTime = form.bestTime.value;
-    const message = form.message.value;
+function submitAppointmentForm() {
+  const form = document.getElementById('appointmentForm');
+  const name = form.name.value;
+  const email = form.email.value;
+  const phone = form.phone.value;
+  const date = form.date.value;
+  const reason = form.reason.value;
+  const bestTime = form.bestTime.value;
+  const message = form.message.value;
 
-    const mailtoLink = `mailto:info@drgebril.com?subject=Online Appointment Form&body=
+  const mailtoLink = `mailto:info@drgebril.com?subject=Online Appointment Form&body=
       Name: ${encodeURIComponent(name)}%0D%0A
       Email: ${encodeURIComponent(email)}%0D%0A
       Phone: ${encodeURIComponent(phone)}%0D%0A
@@ -199,8 +199,10 @@
       Best Time For Appointment: ${encodeURIComponent(bestTime)}%0D%0A
       Message: ${encodeURIComponent(message)}`;
 
-    window.location.href = mailtoLink;
-  }
+  window.location.href = mailtoLink;
+  document.getElementById('appointmentSentMessage').style.display = 'block';
+}
+
 
 
 //DOCTORS REFERRAL
@@ -235,5 +237,5 @@ function submitReferralForm() {
       Phone: ${encodeURIComponent(dentistPhone)}`;
 
   window.location.href = mailtoLink;
+  document.getElementById('referralSentMessage').style.display = 'block';
 }
-
