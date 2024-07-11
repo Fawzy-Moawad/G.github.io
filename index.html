@@ -39,7 +39,7 @@
         </div>
         <div class="contact-info d-flex align-items-center">
           <a href="https://www.instagram.com/dr.gebril_?igsh=M2RpeDV5MXRocHpx&utm_source=qr" class="instagram" target="_blank"><i class="bi bi-instagram d-flex align-items-center p-3"></i></a>         
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@drgebril.com">info@drgebril.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+16042302700"><span>+1 (604) 230-2700</span></a></i>
         </div>
       </div>
@@ -228,7 +228,6 @@
 
     <!-- ======= Appointment Section ======= -->
 
-    <!-- Appointment Section -->
     <section id="appointment" class="appointment section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -236,43 +235,43 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <form id="appointmentForm" role="form" class="php-email-form" onsubmit="submitForm(event)">
+        <form id="appointmentForm" method="post" action="mailto:info@drgebril.com" enctype="text/plain" class="php-email-form">
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 form-group mt-3">
-              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
             </div>
             <div class="col-md-4 form-group mt-3">
-              <select name="reson" id="reson" class="form-select" required>
+              <select name="reson" id="reson" class="form-select" required="">
                 <option value="">Reason For Your Visit</option>
-                <option value="reson1">Full Mouth Recinstruction</option>
-                <option value="reson2">Smile Makeover</option>
-                <option value="reson3">Dentures</option>
-                <option value="reson4">Immediate Dentures</option>
-                <option value="reson5">Partial Dentures</option>
-                <option value="reson6">Denture Reline</option>
-                <option value="reson7">Implant Overdenture</option>
-                <option value="reson8">Dental Bridges</option>
-                <option value="reson9">Dental Crown</option>
-                <option value="reson10">Bruxism Treatment</option>
-                <option value="reson11">Not Sure</option>
+                <option value="Full_Mouth_Recinstruction">Full Mouth Recinstruction</option>
+                <option value="Smile_Makeover">Smile Makeover</option>
+                <option value="Dentures">Dentures</option>
+                <option value="Immediate_Dentures">Immediate Dentures</option>
+                <option value="Partial_Dentures">Partial Dentures</option>
+                <option value="Denture_Reline">Denture Reline</option>
+                <option value="Implant_Overdenture">Implant Overdenture</option>
+                <option value="Dental_Bridges">Dental Bridges</option>
+                <option value="Dental_Crown">Dental Crown</option>
+                <option value="Bruxism_Treatment">Bruxism Treatment</option>
+                <option value="Not_Sure">Not Sure</option>
               </select>
             </div>
             <div class="col-md-4 form-group mt-3">
-              <select name="bestTime" id="bestTime" class="form-select" required>
+              <select name="bestTime" id="bestTime" class="form-select" required="">
                 <option value="">Best Time For Appointment</option>
-                <option value="bestTime1">Morning</option>
-                <option value="bestTime2">Afternoon</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
               </select>
             </div>
           </div>
@@ -282,7 +281,7 @@
           <div class="mt-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message" style="display:none;">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
             <div class="text-center"><button type="submit">Make an Appointment</button></div>
           </div>
         </form>
@@ -290,7 +289,6 @@
     </section><!-- /Appointment Section -->
 
   
-
 
 
     <!-- General Section -->
