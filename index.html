@@ -89,6 +89,7 @@
         </div><!-- End Welcome -->
 
         <div class="content row gy-4">
+          
 
           <!-- Experienced Prosthodontist -->
           <div class="col-lg-6 d-flex align-items-stretch">
@@ -181,10 +182,10 @@
             <p class="fst-italic">
               Dr. Gebril is a Prosthodontist and Full-time Assistant Professor at the Faculty of Dentistry at the University of British Columbia. He specializes in rehabilitating failing dentitions with dentures and advanced implant solutions, providing personalized care for healthy, aesthetic smiles.
             </p>
-            <p>
+            <p class="fst-italic">
               Dr. Gebril contributes to the Graduate Prosthodontics Program and the DMD Program at UBC, focusing on teaching, clinical education, and research. He is actively involved in continuing education at national and international levels, particularly in digital dentistry and prosthodontics.
             </p>
-            <p>
+            <p class="fst-italic">
               He holds a Master’s in Craniofacial Science and post-graduate specialty training in Prosthodontics from UBC, a dental degree from Alexandria University, and a Master’s in Biomedical Engineering from Western University. He is also a fellow of the Royal College of Dentists of Canada in Prosthodontics.
             </p>
 
@@ -227,15 +228,13 @@
 
     <!-- Appointment Section -->
     <section id="appointment" class="appointment section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Book Your Appointment Today!</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <form id="appointmentForm" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-4 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -282,13 +281,12 @@
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-            <div class="text-center"><button type="submit">Make an Appointment</button></div>
+            <div class="text-center"><button type="button" onclick="submitForm()">Make an Appointment</button></div>
           </div>
         </form>
-
       </div>
-
     </section><!-- /Appointment Section -->
+
 
 
 
@@ -481,7 +479,7 @@
     
     <div class="copyright">
       <p> &copy;2024 <span class="copyRight">G PROSTHODONTICS</span> . Designed by <br>
-        <span class="copyRight">NorthWest Tech<a href="#"></a></span></p>
+          <span class="copyRight">Fawzy Moawad<a href="https://fawzymoawad.com/"></a></span></p>
     </div>
 
   </div>

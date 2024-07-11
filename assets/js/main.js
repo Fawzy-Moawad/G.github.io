@@ -180,18 +180,60 @@
 
 //APOINTMENT SECTION
 
-document.addEventListener('DOMContentLoaded', function() {
-  const dateInput = document.getElementById('date');
+  function submitForm() {
+    const form = document.getElementById('appointmentForm');
+    const name = form.name.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const date = form.date.value;
+    const reason = form.reson.value;
+    const bestTime = form.bestTime.value;
+    const message = form.message.value;
 
-  dateInput.addEventListener('change', function() {
-    const date = new Date(dateInput.value);
-    const minutes = date.getMinutes();
+    const mailtoLink = `mailto:info@drgebril.com?subject=Online Appointment Form&body=
+      Name: ${encodeURIComponent(name)}%0D%0A
+      Email: ${encodeURIComponent(email)}%0D%0A
+      Phone: ${encodeURIComponent(phone)}%0D%0A
+      Appointment Date: ${encodeURIComponent(date)}%0D%0A
+      Reason For Your Visit: ${encodeURIComponent(reason)}%0D%0A
+      Best Time For Appointment: ${encodeURIComponent(bestTime)}%0D%0A
+      Message: ${encodeURIComponent(message)}`;
 
-    if (minutes !== 0) {
-      date.setMinutes(0);
-      dateInput.value = date.toISOString().slice(0, 16);
-      alert('Please select a time in full hours.');
-    }
-  });
-});
+    window.location.href = mailtoLink;
+  }
+
+
+//DOCTORS REFERRAL
+
+function submitReferralForm() {
+  const form = document.getElementById('referralForm');
+  const date = form.date.value;
+  const patientName = form.patient_name.value;
+  const age = form.age.value;
+  const patientAddress = form.patient_address.value;
+  const patientPhone = form.patient_phone.value;
+  const medicalConditions = form.medical_conditions.value;
+  const reasonForReferral = form.reason_for_referral.value;
+  const specialRequests = form.special_requests.value;
+  const rediographs = Array.from(form['rediographs[]']).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value).join(', ');
+  const referringDentist = form.referring_dentist.value;
+  const dentistAddress = form.dentist_address.value;
+  const dentistPhone = form.dentist_phone.value;
+
+  const mailtoLink = `mailto:info@drgebril.com?subject=Doctor's Referral Form&body=
+      Date: ${encodeURIComponent(date)}%0D%0A
+      Patient Name: ${encodeURIComponent(patientName)}%0D%0A
+      Date Of Birth: ${encodeURIComponent(age)}%0D%0A
+      Patient Address: ${encodeURIComponent(patientAddress)}%0D%0A
+      Patient Phone Number: ${encodeURIComponent(patientPhone)}%0D%0A
+      Medical Conditions: ${encodeURIComponent(medicalConditions)}%0D%0A
+      Reason for Referral: ${encodeURIComponent(reasonForReferral)}%0D%0A
+      Special Requests: ${encodeURIComponent(specialRequests)}%0D%0A
+      Rediographs: ${encodeURIComponent(rediographs)}%0D%0A
+      Referring Dentist Dr.: ${encodeURIComponent(referringDentist)}%0D%0A
+      Address: ${encodeURIComponent(dentistAddress)}%0D%0A
+      Phone: ${encodeURIComponent(dentistPhone)}`;
+
+  window.location.href = mailtoLink;
+}
 
