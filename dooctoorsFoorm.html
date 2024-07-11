@@ -62,12 +62,15 @@
 
     <main class="main">
 
+        <!-- Referral Section -->
         <section id="referral" class="referral section">
+            <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Doctor's Referral Form</h2>
-            </div>
+            </div><!-- End Section Title -->
+
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <form id="referralForm" role="form" class="php-email-form">
+                <form id="referralForm" role="form" class="php-email-form" onsubmit="submitForm(event)">
                     <div class="row">
                         <div class="col-md-4 form-group">
                             <input type="date" name="date" class="form-control" id="date" placeholder="Date" required>
@@ -91,14 +94,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 form-group mt-5">
+                        <div class="col-md-4 form-group mt-5">
                             <textarea class="form-control" name="reason_for_referral" rows="5" placeholder="Reason for Referral" required></textarea>
                         </div>
-                        <div class="col-md-6 form-group mt-5">
+                        <div class="col-md-4 form-group mt-5">
                             <textarea class="form-control" name="special_requests" rows="5" placeholder="Special Requests" required></textarea>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-4 form-group mt-5">
                             <label class="list-check-box" for="rediographs">Rediographs:</label>
                             <div class="form-check">
@@ -122,6 +123,8 @@
                                 <label class="form-check-label" for="rediographs6">Emailed</label>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4 form-group mt-5">
                             <input type="text" name="referring_dentist" class="form-control" id="referring_dentist" placeholder="Referring Dentist Dr." required>
                         </div>
@@ -132,13 +135,16 @@
                             <input type="tel" class="form-control" name="dentist_phone" id="dentist_phone" placeholder="Phone" required>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <button type="button" onclick="submitReferralForm()">Submit Referral</button>
+                    <div class="mt-5">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message" style="display:none;">Your referral has been sent successfully. Thank you!</div>
+                        <div class="text-center"><button type="submit">Submit Referral</button></div>
                     </div>
-                    <div id="referralSentMessage" class="sent-message" style="display: none;">Your referral has been sent successfully. Thank you!</div>
                 </form>
             </div>
-        </section>
+        </section><!-- /Referral Section -->
+
         
         
 
